@@ -1,0 +1,22 @@
+.header {
+  @apply fixed z-10 flex w-full items-center justify-center border-b border-slate-300 px-4 pt-4;
+  @apply cursor-move bg-white bg-opacity-80 backdrop-blur;
+}
+
+.iconBox {
+  @apply ml-auto flex scale-110 gap-2 text-gray-700;
+}
+
+.title {
+  @apply fixed top-1.5 cursor-default select-none bg-clip-text text-xs font-bold text-transparent;
+  background-image: linear-gradient(
+    135deg,
+    rgb(255, 33, 70),
+    rgb(227, 41, 240) 30%,
+    rgb(48, 169, 255)
+  );
+}
+
+.macTitleDotRegion {
+  @apply fixed left-0 top-0 z-20 block h-6 w-16 cursor-default;
+}

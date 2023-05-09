@@ -1,0 +1,12 @@
+.messageList {
+  @apply flex max-w-full flex-auto flex-col justify-end bg-gray-50 px-4;
+}
+
+.messageList > .logo {
+  display: block;
+  width: 200px;
+  height: 200px;
+  mask: url('@/assets/images/bot-no-bg.png');
+  mask-size: contain;
+  @apply bg-gray-200;
+}

@@ -1,0 +1,73 @@
+.messageCard {
+  @apply mt-8 flex max-w-full;
+}
+.messageCard:last-child {
+  @apply mb-32;
+}
+
+.contentWrap {
+  max-width: calc(100% - 7rem);
+  word-wrap: break-word;
+  @apply mx-2 rounded-xl bg-white px-3 py-2 text-gray-800 shadow;
+  @apply flex items-center;
+}
+
+.content {
+  @apply flex max-w-full flex-col text-sm;
+}
+
+.content a {
+  @apply underline underline-offset-4 hover:opacity-70;
+}
+
+.content ul,
+.content ol {
+  margin-block: 0;
+  padding-inline: 0;
+  @apply my-2 ml-2 py-0 pl-4;
+}
+
+.content ol {
+  list-style: decimal;
+}
+
+.content ul {
+  list-style: initial;
+}
+
+.content ol li:not(:last-child) {
+  @apply mb-2;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content p {
+  @apply my-2;
+}
+
+.content pre {
+  width: 100%;
+  max-width: 100%;
+  overflow: auto;
+  font-family: 'Fira Code';
+
+  @apply mb-2 rounded;
+}
+
+.content :not(pre) code {
+  @apply rounded bg-gray-200 px-1 py-0;
+  font-family: 'Fira Code';
+}
+
+.content > *:first-child {
+  margin-top: 0;
+}
+
+.content > *:last-child {
+  margin-bottom: 0;
+}
+
+.avatar {
+  @apply h-12 w-12 rounded-full object-cover shadow;
+}

@@ -1,0 +1,13 @@
+.layout {
+  @apply flex flex-col;
+  @apply bg-white bg-opacity-80 backdrop-blur;
+}
+
+.layout > main {
+  @apply flex flex-col items-start  justify-start;
+  @apply min-h-screen overflow-scroll pt-20;
+}
+
+.layout > header {
+  @apply h-20;
+}

@@ -1,0 +1,24 @@
+.userInput {
+  @apply fixed bottom-0 z-10 flex  h-24 w-full items-center justify-center py-2;
+  @apply border-t border-slate-300;
+  @apply bg-white bg-opacity-80 backdrop-blur;
+}
+
+.userInput textarea {
+  @apply bottom-0 top-0 block h-full flex-auto bg-transparent px-4 text-sm text-gray-800 caret-gray-800;
+  outline: none;
+  resize: none;
+  line-height: 1.25;
+}
+
+.userInput textarea::placeholder {
+  @apply text-gray-500;
+}
+
+.sendBtn {
+  @apply cursor-pointer hover:bg-blue-200;
+}
+
+.stopBtn {
+  @apply flex scale-110 cursor-pointer items-center gap-2 rounded-xl border border-gray-600 p-2 opacity-70 hover:opacity-100;
+}

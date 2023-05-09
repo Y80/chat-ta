@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/bot-no-bg.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Ta</title>
+    <style>
+      .app-mask {
+        background-color: #fff;
+        backdrop-filter: blur(8px);
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: all 300ms;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app-mask">LOADING</div>
+    <script>
+      window.__removeAppMask = () => {
+        window.__removeAppMask = null
+        const TRANSITION_DURATION = 300
+        const ele = document.querySelector('.app-mask')
+        if (!ele) return
+        ele.style.opacity = 0
+        setTimeout(() => ele.remove(), TRANSITION_DURATION)
+      }
+    </script>
+  </body>
+</html>

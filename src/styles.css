@@ -1,0 +1,57 @@
+@import 'highlight.js/styles/github-dark.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('./assets/fonts/fira-code/woff2/FiraCode-Regular.woff2') format('woff2'),
+    url('./assets/fonts/fira-code/woff/FiraCode-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+html,
+body {
+  /* 禁用 Safari 的弹性滚动 */
+  overscroll-behavior: none;
+}
+
+.full-screen {
+  background-color: rgb(243 244 246);
+}
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+select,
+button {
+  outline: none;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    color: #f6f6f6;
+    background-color: #2f2f2f;
+  }
+
+  a:hover {
+    color: #24c8db;
+  }
+
+  input,
+  button {
+    color: #ffffff;
+    background-color: #0f0f0f98;
+  }
+  button:active {
+    background-color: #0f0f0f69;
+  }
+} */
