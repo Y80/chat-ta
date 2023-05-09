@@ -1,6 +1,11 @@
-![Alt text](src-tauri/icons/Square107x107Logo.png)
+<div align="center">
+ <img src="src/assets/images/bot-no-bg.png">
+</div>
 
-Chat Ta，一款跨平台 Chat GPT 客户端。
+<div align="center" height="100">
+Chat Ta，一款跨平台 Chat GPT 客户端。  
+</div>
+
 
 ## 🌟 特性
 - 跨平台
@@ -19,7 +24,7 @@ Chat Ta，一款跨平台 Chat GPT 客户端。
 - ahooks
 - TailwindCSS
 
-## 本地开发
+## 🧑‍💻 本地开发
 
 开始前，请确保本地已经安装 Node.js、Rust。Node.js 包管理工具推荐使用 pnpm。
 
