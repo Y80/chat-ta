@@ -1,20 +1,20 @@
-import { OPEN_AI_CHAT_MODELS } from "@/constants"
-import { getUserConfig, setUserConfig } from "@/utils/user-config"
-import { dialog } from "@tauri-apps/api"
-import { useMount, useSetState } from "ahooks"
-import classNames from "classnames"
-import { useNavigate } from "react-router-dom"
-import style from "./index.module.css"
+import { OPEN_AI_CHAT_MODELS } from '@/constants'
+import { getUserConfig, setUserConfig } from '@/utils/user-config'
+import { dialog } from '@tauri-apps/api'
+import { useMount, useSetState } from 'ahooks'
+import classNames from 'classnames'
+import { useNavigate } from 'react-router-dom'
+import style from './index.module.css'
 
 export default function More() {
   const navigate = useNavigate()
   const [state, setState] = useSetState({
-    key: "",
-    host: "https://api.openai.com",
-    model: "",
+    key: '',
+    host: 'https://api.openai.com',
+    model: '',
     temperature: 1,
     maxMsgCount: 5,
-    sysPersonality: "",
+    sysPersonality: '',
   })
 
   useMount(async () => {
@@ -40,8 +40,8 @@ export default function More() {
       maxContextMessageCount: state.maxMsgCount,
       systemPersonality: state.sysPersonality,
     })
-    await dialog.message("✅ 配置已保存", { title: "" })
-    navigate("/")
+    await dialog.message('✅ 配置已保存', { title: '' })
+    navigate('/')
   }
 
   return (
@@ -115,7 +115,7 @@ export default function More() {
               let maxMsgCount = state.maxMsgCount
               if (maxMsgCount < 1) {
                 maxMsgCount = 1
-              } else if (maxMsgCount > 1) {
+              } else if (maxMsgCount > 20) {
                 maxMsgCount = 20
               }
               setState({ maxMsgCount })
