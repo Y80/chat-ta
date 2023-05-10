@@ -6,8 +6,6 @@
   "scripts": {
     "dev": "tauri dev",
     "build": "tauri build",
-    "web:dev": "vite",
-    "web:build": "tsc && vite build",
     "new-component": "tsx scripts/new-component.ts"
   },
   "dependencies": {
