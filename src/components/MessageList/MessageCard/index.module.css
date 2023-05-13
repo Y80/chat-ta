@@ -24,7 +24,7 @@
 .content ol {
   margin-block: 0;
   padding-inline: 0;
-  @apply my-2 ml-2 py-0 pl-4;
+  @apply my-1 ml-2 py-0 pl-4;
 }
 
 .content ol {
@@ -36,23 +36,22 @@
 }
 
 .content ol li:not(:last-child) {
-  @apply mb-2;
+  @apply mb-1;
 }
 
 .content h1,
 .content h2,
 .content h3,
 .content p {
-  @apply my-2;
+  @apply my-1;
 }
 
 .content pre {
+  @apply mb-2 rounded;
   width: 100%;
   max-width: 100%;
   overflow: auto;
   font-family: 'Fira Code';
-
-  @apply mb-2 rounded;
 }
 
 .content :not(pre) code {

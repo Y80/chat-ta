@@ -24,19 +24,19 @@
         "center": false,
         "close": true,
         "create": false,
-        "hide": false,
+        "hide": true,
         "maximize": false,
-        "minimize": false,
+        "minimize": true,
         "print": false,
-        "requestUserAttention": false,
-        "setAlwaysOnTop": false,
+        "requestUserAttention": true,
+        "setAlwaysOnTop": true,
         "setContentProtected": false,
         "setCursorGrab": false,
         "setCursorIcon": false,
         "setCursorPosition": false,
         "setCursorVisible": false,
         "setDecorations": false,
-        "setFocus": false,
+        "setFocus": true,
         "setFullscreen": false,
         "setIcon": false,
         "setIgnoreCursorEvents": false,
@@ -49,8 +49,8 @@
         "setTitle": false,
         "show": true,
         "startDragging": true,
-        "unmaximize": false,
-        "unminimize": false
+        "unmaximize": true,
+        "unminimize": true
       },
       "fs": {
         "all": false,
@@ -71,6 +71,9 @@
         "message": true,
         "open": false,
         "save": false
+      },
+      "globalShortcut": {
+        "all": true
       }
     },
     "macOSPrivateApi": false,

@@ -1,4 +1,4 @@
-import { event } from '@tauri-apps/api'
+import { event, globalShortcut } from '@tauri-apps/api'
 import { appWindow } from '@tauri-apps/api/window'
 import hljs from 'highlight.js'
 import { marked } from 'marked'
@@ -68,4 +68,18 @@ readTextFile('message-list.json')
 
 eventBus.on(eventBus.Name.SEND_QUESTION, sendQuestion)
 
-// appWindow.setDecorations(true)
+const TOGGLE_SC = 'Command+Shift+K'
+globalShortcut.isRegistered(TOGGLE_SC).then(async (registered) => {
+  if (registered) {
+    await globalShortcut.unregister(TOGGLE_SC)
+  }
+  globalShortcut.register(TOGGLE_SC, async () => {
+    const visible = await appWindow.isVisible()
+    if (visible) {
+      appWindow.hide()
+    } else {
+      await appWindow.show()
+      appWindow.setFocus()
+    }
+  })
+})
