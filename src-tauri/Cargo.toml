@@ -3,7 +3,7 @@ name = "chat-ta"
 version = "0.0.1"
 description = "A Tauri App"
 authors = ["github@y80"]
-license = ""
+license = "MIT LECENSE"
 repository = ""
 edition = "2021"
 
