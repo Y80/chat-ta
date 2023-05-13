@@ -1,6 +1,7 @@
 .header {
-  @apply fixed z-10 flex w-full items-center justify-center border-b border-slate-300 px-4 pt-4;
-  @apply cursor-move bg-white bg-opacity-80 backdrop-blur;
+  @apply fixed z-10 flex w-full cursor-move items-center  justify-center px-4 pt-4;
+  @apply bg-gray-100 bg-opacity-80 backdrop-blur;
+  @apply border-b border-slate-300;
 }
 
 .iconBox {

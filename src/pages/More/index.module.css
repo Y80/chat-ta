@@ -1,56 +1,8 @@
 .more {
-  @apply w-full flex-auto bg-white py-8;
+  @apply w-full flex-auto py-8;
 }
 
-.more > form {
+.more .form {
   width: clamp(300px, 80%, 440px);
   @apply mx-auto;
-}
-
-.more button {
-  @apply mt-8 w-full rounded-full bg-black px-8 py-2 text-lg font-bold text-white;
-}
-
-.formItem {
-  @apply mb-4 flex flex-col gap-2 text-gray-700;
-}
-
-.formItem input,
-.formItem select,
-.formItem textarea {
-  outline: none;
-  @apply rounded border bg-white px-4 py-2 text-gray-800 transition focus:border-gray-950;
-}
-
-.select {
-  @apply relative;
-}
-.select select {
-  appearance: none;
-}
-
-.select::after {
-  content: "▼";
-  position: absolute;
-  bottom: 0.5rem;
-  right: 1rem;
-  pointer-events: none;
-  @apply inline-block;
-}
-
-.formItem input[type="range"] {
-  @apply mb-1 mt-2 h-3 w-full appearance-none rounded-lg border-0 bg-gray-300 p-0;
-}
-.formItem input[type="range"]::-webkit-slider-thumb {
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  background-color: black;
-  border: 3px solid #ffffff;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.formItem textarea {
-  @apply resize-none;
 }

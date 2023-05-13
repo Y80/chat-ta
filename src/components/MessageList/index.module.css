@@ -1,5 +1,5 @@
 .messageList {
-  @apply flex max-w-full flex-auto flex-col justify-end bg-gray-50 px-4;
+  @apply flex max-w-full flex-auto flex-col justify-end px-4;
 }
 
 .messageList > .logo {

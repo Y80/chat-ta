@@ -1,6 +1,7 @@
 .layout {
   @apply flex flex-col;
-  @apply bg-white bg-opacity-80 backdrop-blur;
+  @apply bg-gray-100;
+  /* background-color: rgb(244, 244, 246); */
 }
 
 .layout > main {
